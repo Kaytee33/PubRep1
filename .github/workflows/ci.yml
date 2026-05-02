@@ -1,0 +1,10 @@
+name: Basic CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First CI Run
+        run: echo "Hello CI"
