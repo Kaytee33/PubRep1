@@ -6,5 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: First CI Run
-        run: echo "Hello CI"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
